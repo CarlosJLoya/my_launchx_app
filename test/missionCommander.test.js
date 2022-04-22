@@ -1,6 +1,10 @@
-describe("Esto es una suite de pruebas", () => {
-    test('Caso de prueba 1', () => {
-        const result = 1 + 9
-        expect(result).toBe(10);
+const MissionCommander = require('./../app/missionCommander');
+const myMissionCommander = new MissionCommander("Woopa")
+describe("Unit Tests for Mission Commander Class", () => {
+    test('1) Create a mission commander objet', () => {
+        //const result = 1 + 9
+        const myMissionCommander = new MissionCommander("Woopa")
+        // expect(result).toBe(10);
+        expect(myMissionCommander.name).toBe("Wooparrrr");
     });
 })
